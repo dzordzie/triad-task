@@ -1,0 +1,52 @@
+:root {
+  --light: rgba(242, 240, 228, 1);
+  --green: rgba(129, 221, 119, 1);
+  --turquoise: rgba(145, 221, 238, 1);
+  --dark: rgba(26, 26, 26, 1);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  transform: scale(calc(100vw / 1440));
+  transform-origin: top left;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  /* scroll-snap-stop: always; */
+}
+
+.introduction {
+  background: var(--light);
+  outline: 1.25rem solid var(--green);
+  outline-offset: -1.25rem;
+}
+
+.about_tool {
+  background-color: aquamarine;
+}
+
+.upload_form {
+  background-color: beige;
+}
+
+.about_us {
+  background-color: blue;
+}
+
+h1 {
+  font-family: 'Maison Neue Bold', sans-serif;
+  font-size: 110px;
+  line-height: 9.13rem;
+  text-align: left;
+}
