@@ -1,6 +1,7 @@
 :root {
   --light: rgba(242, 240, 228, 1);
   --green: rgba(129, 221, 119, 1);
+  --blue: rgba(166, 201, 253, 1);
   --turquoise: rgba(145, 221, 238, 1);
   --dark: rgba(26, 26, 26, 1);
 }
@@ -8,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body,
@@ -54,6 +56,54 @@ p {
   font-weight: 400;
 }
 
+button {
+  font-family: 'Maison Neue Bold', serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.56px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: 'Public Sans', serif;
+  font-size: 14px;
+  background-color: var(--light);
+  resize: none;
+}
+
+input[type='checkbox'] {
+  width: 17px;
+  height: 17px;
+  accent-color: green;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Public Sans', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.45px;
+  text-align: left;
+  color: var(--dark);
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+  outline: none;
+}
+
+label {
+  font-family: 'Public Sans', serif;
+  font-size: 12px;
+  line-height: 14.1px;
+  font-weight: 400;
+}
+
 .link {
   font-size: 16px;
   line-height: 21.25px;
@@ -64,7 +114,7 @@ p {
 }
 
 .link:hover {
-  border-bottom: 1px solid var(--light);
+  border-bottom: none;
 }
 
 .green {
@@ -82,6 +132,10 @@ p {
 
 .bold {
   font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .container {
@@ -104,15 +158,25 @@ p {
 .right {
   flex: 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-/* ===== INTRODUCTION SECTION ==== */
 
 .introduction {
   background: var(--light);
   outline: 20px solid var(--green);
   outline-offset: -20px;
 }
+
+.about_tool,
+.upload_form,
+.upload_in_process {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ===== INTRODUCTION SECTION ==== */
 
 .header {
   display: flex;
@@ -209,15 +273,8 @@ p {
 
 /* ===== ABOUT TOOL SECTION ==== */
 
-.about_tool {
-  display: flex;
-  flex-direction: row;
-}
-
 .about_tool > .left {
   background-color: var(--light);
-  display: flex;
-  flex-direction: column;
 }
 
 .about_tool > .right {
@@ -230,7 +287,6 @@ p {
   width: 511px;
   height: 307px;
   margin-top: 176px;
-  margin-left: 115px;
   gap: 40px;
 }
 
@@ -282,21 +338,161 @@ p {
 }
 
 .wosa_achievements {
-  align-self: start;
   margin-top: 24px;
-  margin-left: 95px;
+  margin-left: 20px;
 }
 
 .in_wosa {
   align-self: start;
   margin-top: 82px;
-  margin-left: 95px;
+  margin-left: 20px;
 }
 
 /* ===== UPLOAD FORM SECTION ==== */
 
-.upload_form {
-  background-color: beige;
+#form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#form > .left,
+#form > .right {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form > .left {
+  background-color: var(--blue);
+}
+
+#form > .right {
+  background-color: var(--light);
+}
+
+.form_heading {
+  display: flex;
+  align-items: center;
+  line-height: 90px;
+  margin-top: 117px;
+}
+
+.number_one_img {
+  width: 68.53px;
+  height: 60.2px;
+  margin-right: 15px;
+}
+
+.number_two_img {
+  width: 70.72px;
+  height: 61.9px;
+  margin-right: 15px;
+}
+
+.base_info,
+.job_info {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  margin-top: 117px;
+}
+
+.base_info,
+.job_info {
+  gap: 40px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input > input,
+.input > textarea {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-left: 30px;
+}
+
+.input > input {
+  height: 56px;
+  border: none;
+}
+
+.input > textarea {
+  height: 264px;
+  border: 2px solid var(--dark);
+  padding-top: 20px;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.upload_link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.56px;
+  height: 47px;
+}
+
+.upload_formats {
+  font-family: 'Public Sans', serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 14.1px;
+  letter-spacing: 0.08em;
+  margin-left: 21px;
+  color: rgba(26, 26, 26, 0.6);
+}
+
+.job_description {
+  width: 100%;
+}
+
+.terms_and_submit {
+  width: 100%;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terms_check {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.terms {
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 16.45px;
+}
+
+.submit_btn {
+  width: 205px;
+  height: 100%;
+  color: var(--dark);
+  background-color: var(--green);
+}
+
+.right_arrow {
+  position: absolute;
+  height: 50.97px;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 /* ===== ABOUT US SECTION ==== */
