@@ -1,13 +1,18 @@
 /* ===== UPLOAD PROGRESS SECTION ==== */
-.upload_in_process {
+/* .upload_in_process {
   display: none;
-}
+} */
+
 .upload_in_process > .left {
   background-color: var(--light);
+  justify-content: center;
+  width: 100%;
 }
 
 .upload_in_process > .right {
   background-color: var(--green);
+  justify-content: center;
+  width: 100%;
 }
 
 .upload_in_process {
@@ -18,13 +23,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 448px;
-  margin: auto 0;
+  max-width: 28rem;
+  width: 60%;
+  height: auto;
 }
 
 .big_scratch {
-  width: 327.09px;
-  height: 22.5px;
+  width: 70%;
+  max-width: 327.09px;
+  height: auto;
   margin-top: 12px;
   margin-left: -4px;
 }
@@ -33,63 +40,166 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto 0;
-  display: none;
+  max-width: 28.125rem;
+  width: 70%;
+  height: auto;
+  /* display: none; */
 }
 
 .fly_me_to_devin {
-  width: 394px;
-  height: 163px;
+  width: 100%;
   text-align: center;
-  line-height: 52px;
+  line-height: inherit;
 }
 
 .loading_img {
-  width: 449.69px;
-  height: 139.35px;
+  width: 100%;
+  height: auto;
   margin-top: 61px;
 }
 
 .wosa_msg {
   display: flex;
   align-items: center;
-  width: 363px;
-  height: 66px;
+  width: 100%;
+  height: auto;
   margin-top: 128px;
   gap: 20px;
+}
+
+.wosa_bubble {
+  width: 68px;
+  height: auto;
 }
 
 .finish_section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto 0;
+  max-width: 30.75rem;
+  width: 70%;
+  height: auto;
+  display: none;
 }
 
 .final_wosa {
-  width: 270.97px;
-  height: 267.01px;
+  width: 54%;
+  height: auto;
   margin-top: -150px;
-  left: 968.7px;
 }
 
 .playbar {
   margin-top: 35px;
+  width: 100%;
+  height: auto;
 }
 
 .listen_later {
   margin-top: 32px;
+  width: 100%;
 }
 
 .listen_later p {
-  width: 464px;
+  width: 100%;
   height: 47px;
-  align-content: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.donwlink {
+.downlink {
   font-family: 'Maison Neue Bold', serif;
-  font-size: 20px;
-  line-height: 26.56px;
+  font-size: inherit;
+  line-height: inherit;
   margin-left: 15px;
+  padding-top: 0;
+}
+
+/* ========== RESPONSIVE ========= */
+@media (orientation: landscape) and (max-width: 1070px) {
+  .downlink {
+    padding-top: 0.625rem;
+    margin: 0;
+  }
+
+  .listen_later p {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+
+  .loading_img {
+    margin-top: 2.5rem;
+  }
+
+  .wosa_msg {
+    margin-top: 4rem;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+  .finish_section {
+    width: 50%;
+  }
+
+  .final_wosa {
+    width: 30%;
+    margin-top: 0;
+  }
+
+  .loading_img {
+    width: 60%;
+    margin: 0;
+  }
+
+  .downlink {
+    padding-top: 0.625rem;
+    margin: 0;
+  }
+
+  .listen_later p {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .wosa_msg {
+    margin-top: 0;
+  }
+
+  .loading_section {
+    gap: 2.5rem;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 650px) {
+  .thanks_section,
+  .loading_section,
+  .finish_section {
+    width: 70%;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 460px) {
+  .loading_section {
+    gap: 1.5rem;
+    margin-top: -1rem;
+  }
+
+  .big_scratch {
+    margin-top: 0;
+  }
+
+  .wosa_bubble {
+    width: 10vw;
+  }
+
+  .playbar,
+  .listen_later {
+    margin-top: 1rem;
+  }
 }

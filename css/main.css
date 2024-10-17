@@ -127,6 +127,8 @@ label {
 
 .light {
   color: var(--light);
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .small {
@@ -182,26 +184,21 @@ label {
 }
 
 /* ========== RESPONSIVE ========= */
-@media screen and (min-width: 769px) and (max-width: 1300px) {
+@media (orientation: landscape) and (min-width: 720px) and (max-width: 1300px) {
   h2 {
-    font-size: clamp(2.125rem, 3.8vw , 3.125rem);
-    line-height: clamp(2.125rem, 3.8vw , 3.125rem);
+    font-size: clamp(2.125rem, 3.8vw, 3.125rem);
+    line-height: clamp(2.125rem, 3.8vw, 3.125rem);
   }
 
   h3 {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: clamp(1.75rem, 2.9vw, 2.375rem);
+    line-height: clamp(2.5rem, 4vw, 3.25rem);
   }
 
-  p:not(.newsletter p):not(.devinband_links p),
+  p:not(.newsletter p):not(.devinband_links p):not(.upload_formats),
   button {
-    font-size: clamp(1rem, 1.38vw , 1.125rem);
-    line-height: clamp(1.25rem, 1.84vw , 1.5rem);
-  }
-
-  .small {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: clamp(1rem, 1.38vw, 1.125rem);
+    line-height: clamp(1.25rem, 1.84vw, 1.5rem);
   }
 }
 
@@ -212,54 +209,69 @@ label {
   }
 }
 
-
-@media screen and (max-width: 1140px) {
-  h3 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  h3 {
-    font-size: 28px;
-    line-height: 35px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media (orientation: portrait) and (min-width: 360px) and (max-width: 650px) {
   h2 {
-    font-size: 50px;
-    line-height: 40px;
+    font-size: clamp(2.125rem, 9.2vw, 3.75rem);
+    line-height: clamp(2.125rem, 9.2vw, 3.75rem);
   }
 
   h3 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: clamp(1.75rem, 5.8vw, 2.375rem);
+    line-height: clamp(2.5rem, 8vw, 3.25rem);
   }
 
-  p,
-  .small {
-    font-size: 16px;
-    line-height: 20px;
+  p:not(.newsletter p):not(.devinband_links p):not(.upload_formats),
+  button {
+    font-size: clamp(0.875rem, 3vw, 1.25rem);
+    line-height: clamp(1.25rem, 4.5vw, 2rem);
   }
 
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
+    line-height: 16.45px;
+  }
 }
 
-@media screen and (max-width: 375px) {
+@media (orientation: portrait) and (max-width: 380px) {
+  .link {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-bottom: 0.0625rem solid var(--dark);
+    padding: 0.375rem 0;
+  }
+
+  label {
+    font-size: 10px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  .container {
+    min-height: 550px;
+    transform: none;
+  }
+}
+
+/* QUERIES FOR SURFACE DUO (❁´◡`❁) */
+@media (orientation: portrait) and (width: 540px) and (height: 720px) {
   h2 {
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 2.125rem;
+    line-height: 2.5rem;
   }
 
   h3 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 34px;
+    line-height: 42px;
   }
 
-  p,
-  .small {
-    font-size: 16px;
-    line-height: 20px;
+  p:not(.newsletter p):not(.devinband_links p),
+  button {
+    font-size: 0.875rem;
+    line-height: 1rem;
   }
 }

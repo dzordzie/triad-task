@@ -1,7 +1,7 @@
 /* ===== ABOUT TOOL SECTION ==== */
-.about_tool {
+/* .about_tool {
   display: none;
-}
+} */
 .about_tool > .left {
   background-color: var(--light);
   justify-content: center;
@@ -51,13 +51,14 @@
 }
 
 .wosa_picture {
-  width: 15.875rem;
+  width: 46%;
   height: auto;
 }
 
 .wosa_card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   align-self: center;
 }
 
@@ -111,6 +112,11 @@
 }
 
 @media (orientation: portrait) and (max-width: 1024px) {
+  .about_wosa {
+    width: 65%;
+    gap: 1.5rem;
+  }
+
   .about_your_job {
     margin-top: 2.5rem;
   }
@@ -120,11 +126,97 @@
     height: clamp(5rem, 7.85vw, 7.0625rem);
   }
 
+  .wosa_picture {
+    width: 40%;
+  }
+
   .wosa_achievements {
+    max-width: 100%;
     margin-top: 0;
   }
 
   .in_wosa {
-    margin-top: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+  .about_wosa {
+    width: 100%;
+  }
+
+  .about_your_job {
+    margin-top: 2.5rem;
+  }
+
+  .arrow {
+    margin-top: 0;
+    height: clamp(2.5rem, 7vw, 6rem);
+  }
+
+  .wosa_picture {
+    width: 40%;
+  }
+
+  .wosa_achievements {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .in_wosa {
+    margin: 0;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 650px) {
+  .about_your_job {
+    gap: 1.5rem;
+    width: 85%;
+  }
+
+  .about_wosa {
+    width: 85%;
+  }
+
+  .wosa_picture {
+    width: 37%;
+  }
+
+  .wosa_achievements {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .in_wosa {
+    margin-top: 0;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 380px) {
+  .about_wosa {
+    gap: 0.875rem;
+  }
+}
+
+/* QUERIES FOR SURFACE DUO (❁´◡`❁) */
+@media (orientation: portrait) and (width: 540px) and (height: 720px) {
+  .arrow {
+    height: 3rem;
+  }
+
+  .about_your_job {
+    gap: 1rem;
+  }
+
+  .wosa_picture {
+    width: 40%;
+  }
+
+  .wosa_who {
+    margin-top: 0.5rem;
+  }
+
+  .about_wosa {
+    gap: 0.5rem;
   }
 }
