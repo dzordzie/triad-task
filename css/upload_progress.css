@@ -43,7 +43,7 @@
   max-width: 28.125rem;
   width: 70%;
   height: auto;
-  /* display: none; */
+  display: none;
 }
 
 .fly_me_to_devin {
@@ -79,7 +79,7 @@
   max-width: 30.75rem;
   width: 70%;
   height: auto;
-  display: none;
+  /* display: none; */
 }
 
 .final_wosa {
@@ -136,6 +136,12 @@
 
   .wosa_msg {
     margin-top: 4rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+  .final_wosa {
+    margin-top: -2rem;
   }
 }
 

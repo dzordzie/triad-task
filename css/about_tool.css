@@ -105,10 +105,18 @@
     margin-top: 1rem;
   }
 
+  .wosa_achievements {
+    margin-left: 0.625rem;
+  }
+
   .in_wosa {
     margin-top: 2.5rem;
     margin-left: 0.625rem;
   }
+}
+
+@media (orientation: landscape) and (max-width: 780px) {
+
 }
 
 @media (orientation: portrait) and (max-width: 1024px) {

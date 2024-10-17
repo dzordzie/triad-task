@@ -172,7 +172,7 @@
   }
 }
 
-@media (orientation: landscape) and (max-width: 720px) {
+@media (orientation: landscape) and (max-width: 780px) {
   .number_one_img {
     height: 5vw;
   }
@@ -233,6 +233,12 @@
     width: 60%;
     padding: 0.5rem 0.25rem;
     align-self: flex-end;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+  .upload {
+    margin-top: 1.25rem;
   }
 }
 
@@ -420,7 +426,4 @@
     padding: 0.5rem 0.25rem;
     align-self: flex-end;
   }
-}
-
-@media (orientation: portrait) and (max-width: 380px) {
 }

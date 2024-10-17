@@ -198,19 +198,35 @@
 
 @media (orientation: landscape) and (max-width: 780px) {
   .heading {
-    scale: 0.6;
-    margin-left: -5.5rem;
+    scale: 0.55;
+    margin-left: -6.5rem;
     margin-top: -5rem;
   }
 
   .logo {
-    margin-top: 1.75rem;
+    margin-top: 1.5rem;
     margin-left: 2rem;
+    width: 4.5rem;
   }
 
   .link_introduction {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     margin-right: 3rem;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 750px) {
+  .heading {
+    margin-left: -7rem;
+  }
+
+  .texts {
+    margin-left: -2.5rem;
+  }
+
+  .text_content {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -224,17 +240,18 @@
 @media (orientation: landscape) and (max-height: 560px) {
   .introduction {
     outline: 10px solid var(--green);
-    outline-offset: -10px;
+    outline-offset: -9.9px;
   }
 
   .scrolluj {
-    width: 3.125rem;
+    width: 3rem;
     height: auto;
     margin: 0 auto;
+    margin-top: -2rem;
     display: block;
-    position: absolute;
+    position: sticky;
     left: calc(50% - (3.125rem / 2));
-    bottom: 1rem;
+    bottom: 2rem;
   }
 
 }
