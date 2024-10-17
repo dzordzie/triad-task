@@ -1,0 +1,282 @@
+/* ===== INTRODUCTION SECTION ==== */
+
+.introduction {
+  background: var(--light);
+  outline: 20px solid var(--green);
+  outline-offset: -20px;
+  display: none;
+}
+
+.logo {
+  margin-top: 40px;
+  margin-left: 47px;
+  text-decoration: none;
+}
+
+.link_introduction {
+  margin-top: 48px;
+  margin-right: 55px;
+}
+
+.heading {
+  width: 508px;
+  height: 433px;
+  margin-top: 43px;
+  margin-left: clamp(3rem, 6.5vw, 7.1875rem);
+  display: flex;
+  align-items: end;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: clamp(4rem, 8.5vw, 9.5rem);
+  margin-top: 71px;
+  width: 528px;
+  height: 274.96px;
+}
+
+.scratch {
+  height: 44.96px;
+  width: auto;
+}
+
+.text_content {
+  margin-top: 3px;
+}
+
+.doodla {
+  height: 140.69px;
+  width: 285px;
+  margin-left: 45px;
+}
+
+.scrolluj {
+  width: 67.02px;
+  height: 90.76px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  left: calc(50% - (67.02px / 2));
+  bottom: 80px;
+}
+
+.review {
+  position: relative;
+  color: var(--green);
+  margin-left: 77px;
+}
+
+#review_1 {
+  position: absolute;
+  left: -70px;
+  top: calc(-86px - 70px - 70px);
+  color: var(--turquoise);
+}
+
+#review_2 {
+  position: absolute;
+  left: 0;
+  top: calc(-86px - 70px);
+}
+
+#review_3 {
+  position: absolute;
+  left: 70px;
+  top: -86px;
+  color: var(--dark);
+}
+
+/* ========== RESPONSIVE ========= */
+@media (orientation: landscape) and (max-width: 1300px) {
+  .heading {
+    margin-top: 0;
+    margin-left: 3rem;
+    transform: scale(0.9);
+  }
+
+  .text_field {
+    margin-right: 7rem;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    max-height: 240px;
+  }
+
+  .scrolluj {
+    bottom: 40px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1140px) {
+  .introduction .content {
+    height: calc(100% - 224px);
+    align-items: center;
+  }
+
+  .introduction {
+    outline: 15px solid var(--green);
+    outline-offset: -15px;
+  }
+
+  .logo {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+
+  .link_introduction {
+    margin-top: 40px;
+  }
+
+  .heading {
+    margin-left: 0;
+    transform: scale(0.8);
+  }
+
+  .text_field {
+    max-width: 450px;
+  }
+
+  .scrolluj {
+    width: 55px;
+    height: auto;
+    left: calc(50% - (55px / 2));
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  .introduction {
+    outline: 10px solid var(--green);
+    outline-offset: -10px;
+  }
+
+  .logo {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .link_introduction {
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+
+  .heading {
+    transform: scale(0.6);
+  }
+
+  .texts {
+    transform: scale(0.7);
+  }
+
+  .text_field {
+    max-width: 400px;
+    margin-right: 3rem;
+  }
+
+  .scrolluj {
+    transform: scale(0.7);
+    bottom: 20px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .introduction .content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .introduction {
+    overflow: scroll;
+  }
+
+  .heading {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .introduction .content {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .introduction {
+    overflow: scroll;
+  }
+
+  .heading {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .texts {
+    transform: scale(0.7);
+    flex-direction: row;
+    padding-bottom: 8rem;
+  }
+
+  .text_field {
+    max-width: 430px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .scratch {
+    margin-right: 1rem;
+  }
+
+  .doodla {
+    margin-top: 3rem;
+  }
+
+  .scrolluj {
+    bottom: 10px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+  .introduction .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction {
+    outline: 10px solid var(--green);
+    outline-offset: -10px;
+  }
+
+  .heading {
+    transform: scale(0.75);
+    margin: 0;
+  }
+
+  .texts {
+    transform: none;
+    flex-direction: column;
+  }
+
+  .text_field {
+    margin: 0;
+    height: auto;
+  }
+
+  .doodla {
+    transform: none;
+    margin-top: 1rem;
+  }
+
+  .scrolluj {
+    transform: none;
+    bottom: 20px;
+  }
+}

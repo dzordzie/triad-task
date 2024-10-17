@@ -11,6 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/about_tool.css">
+  <link rel="stylesheet" href="./css/about_us.css">
+  <link rel="stylesheet" href="./css/introduction.css">
+  <link rel="stylesheet" href="./css/upload_form.css">
+  <link rel="stylesheet" href="./css/upload_progress.css">
   <title>TRIAD Hiring Page</title>
 </head>
 
@@ -47,13 +52,13 @@
     <div class="left">
       <div class="about_your_job">
         <h2 class="your_job_heading"><span class="circled_word"><img src="./img/circle.png" alt="circle"
-              class="circle_image">Opíš</span> nám svoju<br>prácu, s ktorou si<br>fakt spokojný
+              class="circle_image">Opíš</span> nám svoju prácu, s ktorou si fakt spokojný
           🙌</h2>
         <p class="your_job_text"><span class="bold">Najskôr ti ju okomentuje naše AI vytrénované</span> na svetových
           prácach. A kým si urobíš čaj, môže prísť pozvanie na kávu od
           nás.</p>
+        <img src="./img/arrow.png" alt="dole" class="arrow">
       </div>
-      <img src="./img/arrow.png" alt="dole" class="arrow">
     </div>
     <div class="right">
       <div class="about_wosa">
@@ -67,8 +72,7 @@
         </div>
         <p class="wosa_achievements">Držtieľ ocenenia Filip, <span class="bold">majiteľ stoviek ocenení</span>
           od<br>slovenských grand prix, cez
-          New York až po<br>
-          globálne ocenenia na Warc,
+          New York až po globálne ocenenia na Warc,
           Effie a Saber</p>
         <a href="" class="link in_wosa">Poď si po feedback od AI Wosu</a>
       </div>
@@ -78,15 +82,17 @@
   <section class="container upload_form">
     <form action="#" method="POST" id="form">
       <div class="left">
-        <h2 class="form_heading upload_cv"><img src="./img/1.png" alt="1." class="number_one_img">Nahraj CV</h2>
         <div class="base_info">
-          <div class="input name">
-            <label for="name" class="label">NAPÍŠ NÁM AKO SA VOLÁŠ</label>
-            <input type="text" id="name" name="name" placeholder="Meno a priezvisko">
-          </div>
-          <div class="input email">
-            <label for="email" class="label">KONTAKT NA TEBA</label>
-            <input type="email" id="email" name="email" placeholder="E-mail">
+          <h2 class="form_heading upload_cv"><img src="./img/1.png" alt="1." class="number_one_img">Nahraj CV</h2>
+          <div class="form_inputs">
+            <div class="input name">
+              <label for="name" class="label">NAPÍŠ NÁM AKO SA VOLÁŠ</label>
+              <input type="text" id="name" name="name" placeholder="Meno a priezvisko">
+            </div>
+            <div class="input email">
+              <label for="email" class="label">KONTAKT NA TEBA</label>
+              <input type="email" id="email" name="email" placeholder="E-mail">
+            </div>
           </div>
           <div class="upload">
             <a href="" class="link upload_link">Nahraj svoje CV</a>
@@ -96,8 +102,8 @@
       </div>
       <img src="./img/right.png" alt="" class="right_arrow">
       <div class="right">
-        <h2 class="form_heading describe_job"><img src="./img/2.png" alt="2." class="number_two_img">Opíš prácu</h2>
         <div class="job_info">
+          <h2 class="form_heading describe_job"><img src="./img/2.png" alt="2." class="number_two_img">Opíš prácu</h2>
           <div class="input job_description">
             <label for="message" class="label">OPIS PRÁCE</label>
             <textarea id="message" name="message"
@@ -145,7 +151,9 @@
   </section>
 
   <section class="container about_us">
-    <a href="" class="link link_about_us">Chcem feedback</a>
+    <header class="header">
+      <a href="" class="link link_about_us">Chcem feedback</a>
+    </header>
     <div class="content">
       <div class="this_is_us">
         <h1 class="us_heading">Toto sme<br>my, <span class="green">TRIAD</span></h1>

@@ -1,0 +1,130 @@
+/* ===== ABOUT TOOL SECTION ==== */
+.about_tool {
+  display: none;
+}
+.about_tool > .left {
+  background-color: var(--light);
+  justify-content: center;
+}
+
+.about_tool > .right {
+  background-color: var(--green);
+  justify-content: center;
+}
+
+.about_your_job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 31.9375rem;
+  width: 75%;
+  height: auto;
+  gap: 40px;
+}
+
+.circled_word {
+  position: relative;
+}
+
+.circle_image {
+  position: absolute;
+  display: inline-block;
+  width: 115%;
+  height: auto;
+  top: -13.5px;
+  left: -3px;
+}
+
+.arrow {
+  margin-top: 27px;
+  height: clamp(6rem, 7.85vw, 7.0625rem);
+  width: auto;
+}
+
+.about_wosa {
+  display: flex;
+  flex-direction: column;
+  max-width: 34.375rem;
+  width: 85%;
+  height: auto;
+}
+
+.wosa_picture {
+  width: 15.875rem;
+  height: auto;
+}
+
+.wosa_card {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.wosa_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.wosa_who {
+  margin-top: 13px;
+}
+
+.wosa_achievements {
+  margin-top: 1.5rem;
+  margin-left: 1.25rem;
+  max-width: 26.25rem;
+  width: 100%;
+}
+
+.in_wosa {
+  align-self: start;
+  margin-top: 82px;
+  margin-left: 20px;
+}
+
+/* ========== RESPONSIVE ========= */
+@media (orientation: landscape) and (max-width: 1300px) {
+  .left,
+  .right {
+    max-width: 80%;
+  }
+
+  .wosa_picture {
+    width: clamp(10rem, 19.5vw, 15.875rem);
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  .about_your_job {
+    gap: 2rem;
+  }
+
+  .arrow {
+    margin-top: 1rem;
+  }
+
+  .in_wosa {
+    margin-top: 2.5rem;
+    margin-left: 0.625rem;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+  .about_your_job {
+    margin-top: 2.5rem;
+  }
+
+  .arrow {
+    margin-top: 0;
+    height: clamp(5rem, 7.85vw, 7.0625rem);
+  }
+
+  .wosa_achievements {
+    margin-top: 0;
+  }
+
+  .in_wosa {
+    margin-top: 1.5rem;
+  }
+}

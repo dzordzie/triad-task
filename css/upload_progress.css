@@ -1,0 +1,95 @@
+/* ===== UPLOAD PROGRESS SECTION ==== */
+.upload_in_process {
+  display: none;
+}
+.upload_in_process > .left {
+  background-color: var(--light);
+}
+
+.upload_in_process > .right {
+  background-color: var(--green);
+}
+
+.upload_in_process {
+  position: relative;
+}
+
+.thanks_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 448px;
+  margin: auto 0;
+}
+
+.big_scratch {
+  width: 327.09px;
+  height: 22.5px;
+  margin-top: 12px;
+  margin-left: -4px;
+}
+
+.loading_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+  display: none;
+}
+
+.fly_me_to_devin {
+  width: 394px;
+  height: 163px;
+  text-align: center;
+  line-height: 52px;
+}
+
+.loading_img {
+  width: 449.69px;
+  height: 139.35px;
+  margin-top: 61px;
+}
+
+.wosa_msg {
+  display: flex;
+  align-items: center;
+  width: 363px;
+  height: 66px;
+  margin-top: 128px;
+  gap: 20px;
+}
+
+.finish_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+}
+
+.final_wosa {
+  width: 270.97px;
+  height: 267.01px;
+  margin-top: -150px;
+  left: 968.7px;
+}
+
+.playbar {
+  margin-top: 35px;
+}
+
+.listen_later {
+  margin-top: 32px;
+}
+
+.listen_later p {
+  width: 464px;
+  height: 47px;
+  align-content: center;
+}
+
+.donwlink {
+  font-family: 'Maison Neue Bold', serif;
+  font-size: 20px;
+  line-height: 26.56px;
+  margin-left: 15px;
+}
