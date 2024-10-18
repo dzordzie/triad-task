@@ -66,6 +66,51 @@
   width: 17.8125rem;
   margin-left: 2.8125rem;
   margin-top: 2rem;
+  display: none;
+}
+
+.doodla_anim {
+  height: 9.7vw;
+  width: 19.8vw;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.kolajnice {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.vozik {
+  position: absolute;
+  width: 40%;
+  top: 0;
+  left: 0;
+  animation: jazdi 4s ease-in-out infinite;
+}
+
+/* ========== DOODLA ANIMATION ========== */
+@keyframes jazdi {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  5% {
+    top: 25%;
+    left: 12%;
+  }
+  70% {
+    top: -50%;
+    left: 78%;
+  }
+  75% {
+    top: -70%;
+    left: 60%;
+  }
 }
 
 .scrolluj {
