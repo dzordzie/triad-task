@@ -1,9 +1,4 @@
 /* ===== UPLOAD PROGRESS SECTION ==== */
-#uploading_section,
-#finish_section {
-  display: none;
-}
-
 .upload_in_process > .left {
   background-color: var(--light);
   justify-content: center;
@@ -73,7 +68,6 @@
 }
 
 .finish_section {
-  display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 30.75rem;
