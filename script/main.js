@@ -1,4 +1,4 @@
-/* ========= FROM VALIDATION ========= */
+/* ================== FROM VALIDATION ================== */
 const form = document.getElementById('form')
 const nameInput = document.getElementById('name')
 const emailInput = document.getElementById('email')
@@ -8,11 +8,10 @@ const termsErrorImg = document.querySelector('.terms_error')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-
   if (formCheck()) {
     resetForm()
+    setTimeout(swapSections, 2000)
   }
-
 })
 
 function setError(input, message) {
@@ -74,7 +73,7 @@ function formCheck() {
     console.log(isValid)
     return false
   }
-  console.log(isValid);
+  console.log(isValid)
   return true
 }
 
@@ -83,4 +82,18 @@ function resetForm() {
   emailInput.value = ''
   messageInput.value = ''
   termsInput.checked = false
+}
+
+/* ================== SUCCESS FORM SEND ================== */
+
+const formSection = document.getElementById('want_feedback')
+const uploadingSection = document.getElementById('uploading_section')
+
+function swapSections() {
+  uploadingSection.style.display = 'flex'
+  uploadingSection.scrollIntoView({ behavior: 'smooth' })
+  window.location.hash = 'uploading_section'
+  setTimeout(() => {
+    formSection.style.display = 'none'
+  }, 1000)
 }

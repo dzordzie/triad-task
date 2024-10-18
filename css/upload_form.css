@@ -1,7 +1,4 @@
 /* ===== UPLOAD FORM SECTION ==== */
-/* .upload_form {
-  display: none;
-} */
 #form {
   display: flex;
   width: 100%;
@@ -445,7 +442,7 @@ small {
   .terms_and_submit {
     align-items: normal;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     gap: 1rem;
   }
 

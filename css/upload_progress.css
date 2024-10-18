@@ -1,7 +1,8 @@
 /* ===== UPLOAD PROGRESS SECTION ==== */
-/* .upload_in_process {
+#uploading_section,
+#finish_section {
   display: none;
-} */
+}
 
 .upload_in_process > .left {
   background-color: var(--light);
@@ -43,7 +44,6 @@
   max-width: 28.125rem;
   width: 70%;
   height: auto;
-  display: none;
 }
 
 .fly_me_to_devin {
