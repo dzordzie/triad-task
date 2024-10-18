@@ -16,10 +16,12 @@
   <link rel="stylesheet" href="./css/introduction.css">
   <link rel="stylesheet" href="./css/upload_form.css">
   <link rel="stylesheet" href="./css/upload_progress.css">
+  <script src="./script/main.js" defer></script>
   <title>TRIAD Hiring Page</title>
 </head>
 
 <body>
+  <!-- ================ INTRTODUCTION SECTION ================ -->
   <section class="container introduction">
     <header class="header">
       <a href="https://triad.sk/">
@@ -47,7 +49,7 @@
     </div>
     <img src="./img/scrolluj.png" alt="scrolluj" class="scrolluj">
   </section>
-
+  <!-- ================ ABOUT TOOL SECTION ================ -->
   <section class="container about_tool">
     <div class="left">
       <div class="about_your_job">
@@ -78,7 +80,7 @@
       </div>
     </div>
   </section>
-
+  <!-- ================ UPLOAD FORM SECTION ================ -->
   <section class="container upload_form" id="want_feedback">
     <form action="#" method="POST" id="form">
       <div class="left">
@@ -88,10 +90,12 @@
             <div class="input name">
               <label for="name" class="label">NAPÍŠ NÁM AKO SA VOLÁŠ</label>
               <input type="text" id="name" name="name" placeholder="Meno a priezvisko">
+              <small>Error message</small>
             </div>
             <div class="input email">
               <label for="email" class="label">KONTAKT NA TEBA</label>
-              <input type="email" id="email" name="email" placeholder="E-mail">
+              <input type="text" id="email" name="email" placeholder="E-mail">
+              <small>Error message</small>
             </div>
           </div>
           <div class="upload">
@@ -108,12 +112,14 @@
             <label for="message" class="label">OPIS PRÁCE</label>
             <textarea id="message" name="message"
               placeholder="Sem opíš svoju prácu, ktorú máš rád, alebo chceš vylepšiť"></textarea>
+            <small>Error message</small>
           </div>
-          <div class="terms_and_submit">
+          <div class="input terms_and_submit">
             <div class="terms_check">
               <input type="checkbox" id="terms">
-              <label for="terms" class="terms">Súhlasím so spracovaním <span
-                  class="green underline">osobných údajov</span></label>
+              <label for="terms" class="terms">Súhlasím so spracovaním <span class="green underline">osobných
+                  údajov</span></label>
+              <img src="./img/kruzek.svg" alt="" class="terms_error">
             </div>
             <button type="submit" class="submit_btn">Odošli a vyhodnoť</button>
           </div>
@@ -121,7 +127,7 @@
       </div>
     </form>
   </section>
-
+  <!-- ================ UPLOADING SECTION ================ -->
   <section class="container upload_in_process">
     <div class="left">
       <div class="thanks_section">
@@ -133,7 +139,8 @@
     <img src="./img/right.png" alt="" class="right_arrow">
     <div class="right">
       <div class="loading_section">
-        <h3 class="fly_me_to_devin"><span class="light">Tvoje slová už letia</span> rýchlosťou internetu do&nbsp;Devína.</h3>
+        <h3 class="fly_me_to_devin"><span class="light">Tvoje slová už letia</span> rýchlosťou internetu do&nbsp;Devína.
+        </h3>
         <img src="./img/loading-picture.png" alt="" class="loading_img">
         <div class="wosa_msg">
           <img src="./img/small-wosa.png" alt="" class="wosa_bubble">
@@ -149,7 +156,7 @@
       </div>
     </div>
   </section>
-
+  <!-- ================ ABOUT US SECTION ================ -->
   <section class="container about_us">
     <header class="header">
       <a href="#want_feedback" class="link link_about_us">Chcem feedback</a>
