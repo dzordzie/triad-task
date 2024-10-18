@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault()
   if (formCheck()) {
     resetForm()
-    setTimeout(swapSections, 2000)
+    setTimeout(swapSections, 1000)
   }
 })
 
@@ -88,12 +88,47 @@ function resetForm() {
 
 const formSection = document.getElementById('want_feedback')
 const uploadingSection = document.getElementById('uploading_section')
+let currentImageIndex = 0
+let imageChangeInterval
 
 function swapSections() {
+  currentImageIndex = 0
+  changeLoadingImages()
+  imageChangeInterval = setInterval(changeLoadingImages, 1000)
+  setTimeout(switchToFinishSection, 6000)
   uploadingSection.style.display = 'flex'
   uploadingSection.scrollIntoView({ behavior: 'smooth' })
   window.location.hash = 'uploading_section'
   setTimeout(() => {
     formSection.style.display = 'none'
   }, 1000)
+}
+
+/* ================== SENDING DATA LOADING ================== */
+
+const loadingImages = [
+  './img/loading_1.png',
+  './img/loading_2.png',
+  './img/loading_3.png',
+  './img/loading_4.png',
+  './img/loading_5.png',
+  './img/loading_6.png',
+]
+
+const loadingImg = document.querySelector('.loading_img')
+const loadingSection = document.getElementById('loading_section')
+const finishSection = document.getElementById('finish_section')
+
+function changeLoadingImages() {
+  loadingImg.src = loadingImages[currentImageIndex]
+
+  if (currentImageIndex < loadingImages.length - 1) {
+    currentImageIndex++
+  }
+}
+
+function switchToFinishSection() {
+  clearInterval(imageChangeInterval)
+  loadingSection.style.display = 'none'
+  finishSection.style.display = 'flex'
 }
