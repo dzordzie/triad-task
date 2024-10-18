@@ -35,18 +35,18 @@ a {
 }
 
 h1 {
-  font-size: 110px;
-  line-height: 86px;
+  font-size: 6.875rem;
+  line-height: 5.375rem;
 }
 
 h2 {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
 }
 
 h3 {
-  font-size: 38px;
-  line-height: 48px;
+  font-size: 2.375rem;
+  line-height: 3rem;
 }
 
 li {
@@ -55,17 +55,17 @@ li {
 
 p {
   font-family: 'Public Sans', serif;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 400;
 }
 
 button {
   font-family: 'Maison Neue Bold', serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 26.56px;
-  border-radius: 4px;
+  line-height: 1.66rem;
+  border-radius: .25rem;
   border: none;
   cursor: pointer;
 }
@@ -73,23 +73,23 @@ button {
 input,
 textarea {
   font-family: 'Public Sans', serif;
-  font-size: 14px;
+  font-size: .875rem;
   background-color: var(--light);
   resize: none;
 }
 
 input[type='checkbox'] {
-  width: 17px;
-  height: 17px;
+  width: 1.0625rem;
+  height: 1.0625rem;
   accent-color: green;
 }
 
 input::placeholder,
 textarea::placeholder {
   font-family: 'Public Sans', serif;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 400;
-  line-height: 16.45px;
+  line-height: 1.0281rem;
   text-align: left;
   color: var(--dark);
 }
@@ -103,18 +103,18 @@ textarea:hover {
 
 label {
   font-family: 'Public Sans', serif;
-  font-size: 12px;
-  line-height: 14.1px;
+  font-size: .75rem;
+  line-height: .8812rem;
   font-weight: 400;
 }
 
 .link {
-  font-size: 16px;
-  line-height: 21.25px;
+  font-size: 1rem;
+  line-height: 1.3281rem;
   text-align: right;
   color: var(--dark);
-  border-bottom: 1px solid var(--dark);
-  padding: 10px 0;
+  border-bottom: .0625rem solid var(--dark);
+  padding: .625rem 0;
 }
 
 .link:hover {
@@ -132,8 +132,8 @@ label {
 }
 
 .small {
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 1rem;
+  line-height: 1.4375rem;
 }
 
 .bold {
@@ -227,8 +227,8 @@ label {
 
   input::placeholder,
   textarea::placeholder {
-    font-size: 12px;
-    line-height: 16.45px;
+    font-size: .75rem;
+    line-height: 1.0281rem;
   }
 }
 
@@ -241,7 +241,7 @@ label {
   }
 
   label {
-    font-size: 10px;
+    font-size: .625rem;
   }
 }
 
@@ -251,26 +251,7 @@ label {
   }
 
   .container {
-    min-height: 550px;
+    min-height: 34.375rem;
     transform: none;
   }
 }
-
-/* QUERIES FOR SURFACE DUO (❁´◡`❁) */
-/* @media (orientation: portrait) and (width: 540px) and (height: 720px) {
-  h2 {
-    font-size: 2.125rem;
-    line-height: 2.5rem;
-  }
-
-  h3 {
-    font-size: 34px;
-    line-height: 42px;
-  }
-
-  p:not(.newsletter p):not(.devinband_links p),
-  button {
-    font-size: 0.875rem;
-    line-height: 1rem;
-  }
-} */

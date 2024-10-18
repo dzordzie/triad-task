@@ -20,7 +20,7 @@
   max-width: 31.9375rem;
   width: 75%;
   height: auto;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .circled_word {
@@ -32,12 +32,12 @@
   display: inline-block;
   width: 115%;
   height: auto;
-  top: -13.5px;
-  left: -3px;
+  top: -0.8438rem;
+  left: -.1875rem;
 }
 
 .arrow {
-  margin-top: 27px;
+  margin-top: 1.6875rem;
   height: clamp(6rem, 7.85vw, 7.0625rem);
   width: auto;
 }
@@ -68,7 +68,7 @@
 }
 
 .wosa_who {
-  margin-top: 13px;
+  margin-top: .8125rem;
 }
 
 .wosa_achievements {
@@ -80,8 +80,8 @@
 
 .in_wosa {
   align-self: start;
-  margin-top: 82px;
-  margin-left: 20px;
+  margin-top: 5.125rem;
+  margin-left: 1.25rem;
 }
 
 /* ========== RESPONSIVE ========= */
@@ -113,10 +113,6 @@
     margin-top: 2.5rem;
     margin-left: 0.625rem;
   }
-}
-
-@media (orientation: landscape) and (max-width: 780px) {
-
 }
 
 @media (orientation: portrait) and (max-width: 1024px) {

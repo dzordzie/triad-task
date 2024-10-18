@@ -8,7 +8,7 @@
 }
 
 .about_us .content {
-  max-width: 1210px;
+  max-width: 75.625rem;
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -17,13 +17,13 @@
 .about_us .header {
   justify-content: end;
   align-items: start;
-  height: 90px;
+  height: 5.625rem;
 }
 
 .link_about_us {
   justify-self: end;
   color: var(--green);
-  border-bottom: 1px solid var(--green);
+  border-bottom: 0.0625rem solid var(--green);
   margin-top: 46px;
   margin-right: 4.625rem;
 }
@@ -31,11 +31,11 @@
 .this_is_us {
   display: flex;
   flex-direction: column;
-  max-width: 511px;
+  max-width: 31.9375rem;
   width: 55%;
   height: 100%;
-  margin-top: 81px;
-  gap: 40px;
+  margin-top: 5.0625rem;
+  gap: 2.5rem;
 }
 
 .us_heading {
@@ -56,9 +56,9 @@
 }
 
 .fun_with_us {
-  margin-left: 33px;
-  margin-top: 4px;
-  max-width: 420px;
+  margin-left: 2.0625rem;
+  margin-top: 0.25rem;
+  max-width: 26.25rem;
   width: 100%;
   height: auto;
 }
@@ -102,14 +102,14 @@
   margin: 0 auto;
   margin-top: clamp(2rem, 5.5vw, 5rem);
   padding-bottom: 5rem;
-  max-width: 1231px;
+  max-width: 76.9375rem;
   width: 90%;
   height: 12.125rem;
 }
 
 .logo_empty {
-  width: 92px;
-  height: 75px;
+  width: 5.75rem;
+  height: 4.6875rem;
 }
 
 .devinband_links {
@@ -122,29 +122,29 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .devinband_links p {
-  font-size: 20px;
-  line-height: 26.56px;
+  font-size: 1.25rem;
+  line-height: 1.66rem;
 }
 
 .footer_link {
   font-family: 'Public Sans', serif;
-  font-size: 20px;
-  line-height: 26.56px;
+  font-size: 1.25rem;
+  line-height: 1.66rem;
   text-decoration: underline;
   color: var(--green);
 }
 
 .mini_arrow {
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 .last_section {
-  margin-left: 16px;
-  margin-top: 18px;
+  margin-left: 1rem;
+  margin-top: 1.125rem;
   display: flex;
   justify-content: space-between;
 }
@@ -158,8 +158,8 @@
   display: flex;
   flex-wrap: wrap;
   font-family: 'Public Sans', serif;
-  font-size: 20px;
-  line-height: 26.56px;
+  font-size: 1.25rem;
+  line-height: 1.66rem;
 }
 
 .main_menu_link {
@@ -177,7 +177,7 @@
 
 .newsletter_form {
   display: flex;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .newsletter_form .footer_link {
@@ -270,8 +270,8 @@
   }
 
   .this_is_us {
-    margin-top: 40px;
-    gap: 30px;
+    margin-top: 2.5rem;
+    gap: 1.875rem;
   }
 
   .us_heading {
@@ -363,7 +363,7 @@
   }
 
   .footer_link {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
@@ -411,12 +411,12 @@
 
 @media (orientation: portrait) and (max-width: 465px) {
   .devinband_links p {
-    font-size: 18px;
-    line-height: 26.56px;
+    font-size: 1.125rem;
+    line-height: 1.66rem;
   }
 
   .footer_link:not(.newsletter_form .footer_link) {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 

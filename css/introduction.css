@@ -2,13 +2,13 @@
 
 .introduction {
   background: var(--light);
-  outline: 20px solid var(--green);
-  outline-offset: -20px;
+  outline: 1.25rem solid var(--green);
+  outline-offset: -1.25rem;
   /* display: none; */
 }
 
 .introduction .content {
-  max-width: 1210px;
+  max-width: 75.625rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -44,19 +44,19 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 71px;
+  margin-top: 4.4375rem;
   width: 100%;
-  max-width: 530px;
+  max-width: 33.125rem;
   height: auto;
 }
 
 .scratch {
-  height: 44.96px;
+  height: 2.81rem;
   width: auto;
 }
 
 .text_content {
-  margin-top: 3px;
+  margin-top: 0.1875rem;
   margin-left: 1rem;
   width: 90%;
 }
@@ -69,38 +69,38 @@
 }
 
 .scrolluj {
-  width: 67.02px;
-  height: 90.76px;
+  width: 4.1887rem;
+  height: 5.6725rem;
   margin: 0 auto;
   display: block;
   position: absolute;
-  left: calc(50% - (67.02px / 2));
-  bottom: 80px;
+  left: calc(50% - (4.1887rem / 2));
+  bottom: 5rem;
 }
 
 .review {
   position: relative;
   color: var(--green);
-  margin-left: 77px;
+  margin-left: 4.8125rem;
 }
 
 #review_1 {
   position: absolute;
-  left: -70px;
-  top: calc(-86px - 70px - 70px);
+  left: -4.375rem;
+  top: calc(-5.375rem - 4.375rem - 4.375rem);
   color: var(--turquoise);
 }
 
 #review_2 {
   position: absolute;
   left: 0;
-  top: calc(-86px - 70px);
+  top: calc(-5.375rem - 4.375rem);
 }
 
 #review_3 {
   position: absolute;
-  left: 70px;
-  top: -86px;
+  left: 4.375rem;
+  top: -5.375rem;
   color: var(--dark);
 }
 
@@ -115,7 +115,7 @@
   }
 
   .scrolluj {
-    bottom: 40px;
+    bottom: 2.5rem;
   }
 }
 
@@ -225,22 +225,22 @@
   }
 
   .text_content {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 
 @media (orientation: landscape) and (max-width: 720px) {
   .introduction {
-    outline: 10px solid var(--green);
-    outline-offset: -10px;
+    outline: 0.625rem solid var(--green);
+    outline-offset: -0.625rem;
   }
 }
 
 @media (orientation: landscape) and (max-height: 560px) {
   .introduction {
-    outline: 10px solid var(--green);
-    outline-offset: -9.9px;
+    outline: 0.625rem solid var(--green);
+    outline-offset: -0.6188rem;
   }
 
   .scrolluj {
@@ -253,7 +253,6 @@
     left: calc(50% - (3.125rem / 2));
     bottom: 2rem;
   }
-
 }
 
 @media (orientation: portrait) and (max-width: 1024px) {
@@ -305,8 +304,8 @@
 
 @media (orientation: portrait) and (max-width: 650px) {
   .introduction {
-    outline: 10px solid var(--green);
-    outline-offset: -10px;
+    outline: 0.625rem solid var(--green);
+    outline-offset: -0.625rem;
   }
 
   .introduction .content {
@@ -419,8 +418,8 @@
   }
 
   .text_content {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
   }
 }
 
@@ -435,6 +434,6 @@
   }
 
   .text_content {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
