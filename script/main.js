@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault()
   if (formCheck()) {
     resetForm()
-    setTimeout(swapSections, 1000)
+    swapSections()
   }
 })
 
